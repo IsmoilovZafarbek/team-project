@@ -7,9 +7,208 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite + TS</title>
 	</head>
-	<body>
-		<h2>Hello Zafar</h2>
-		<h1 class="text-4xl font-bold text-red-200 hover:text-red-500">Hello World</h1>
-		<script type="module" src="/src/main.ts"></script>
+	<body class="flex w-full flex-col items-center gap-[10px] bg-amber-50">
+		  <section class="w-full flex flex-col items-center mt-[70px] px-4">
+			<h2 class="text-[60px] font-bold leading-[62px] text-center text-[#030527] max-w-[883px]">
+			  What Patients Are Saying About Dr. Hassan
+			</h2>
+		  
+			<div class="w-[1440px] h-auto flex justify-center gap-10 mt-16">
+			  <div class="relative w-[400px] h-[444px] flex-shrink-0">
+				<div class=" relative -left-30 top-30 w-[300px] h-[350px] bg-[#98aadd] rounded-[16px] z-0"></div>
+				<img
+				  src="./public/Group 2085664315.png"
+				  alt="Dr. Hassan"
+				  class="absolute -top-5 w-[400px] h-[444px] flex-shrink-0"
+				/>
+			  </div>
+		  
+			  <div class="max-w-[550px]">
+				<p class="text-3xl text-[#00B69B] mb-4">“</p>
+				<p class="text-[#030527] text-base leading-7 mb-4 w-[477px]">
+				  Dr. Hassan is truly exceptional. His expertise, kindness, and genuine care for his patients are evident in every interaction. I always feel heard and well taken care of. Highly recommend!
+				</p>
+				<p class="text-3xl text-[#00B69B] mb-4">”</p>
+				<div class="flex items-center gap-4 ml-[28px] mt-4">
+				  <img src="./public/transparent.png" alt="Eleanor" class="w-10 h-10 rounded-full object-cover" />
+				  <div>
+					<p class="font-semibold text-[#030527]">Eleanor Pena</p>
+					<p class="text-gray-500 text-sm">Slack Inc, New York team</p>
+				  </div>
+				</div>
+		  
+				<div class="flex gap-3 mt-6 ml-[28px]">
+				  <button class="w-10 h-10 rounded-full border flex items-center justify-center text-[#00B69B] hover:bg-gray-100">
+					←
+				  </button>
+				  <button class="w-10 h-10 rounded-full bg-[#00B69B] text-white flex items-center justify-center hover:bg-[#00A58A]">
+					→
+				  </button>
+				</div>
+			  </div>
+			</div>
+		  </section>
+		  <section class="text-center py-16 px-4">
+			<h1 class="text-4xl font-bold text-gray-900 mb-2">Choose your pricing plan</h1>
+			<p class="text-gray-500 mb-6">Browse through our tailored pricing plans and choose the one that best fits your needs.</p>
+		
+			<!-- Toggle -->
+			<div class="flex justify-center items-center gap-2 mb-12">
+			  <span class="text-gray-700 font-medium">Monthly</span>
+			  <label class="inline-flex items-center cursor-pointer">
+				<input type="checkbox" class="sr-only peer" />
+				<div class="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-teal-500 relative">
+				  <div class="absolute w-5 h-5 bg-white rounded-full top-0.5 left-0.5 peer-checked:translate-x-full transition-transform"></div>
+				</div>
+			  </label>
+			  <span class="text-gray-700 font-medium">Yearly</span>
+			</div>
+		
+			<!-- Cards -->
+			<div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto">
+			  <!-- Basic Package -->
+			  <div class="bg-teal-50 p-8 rounded-xl w-full max-w-md shadow-sm">
+				<h2 class="text-xl font-semibold text-gray-900 mb-1">Basic Package</h2>
+				<p class="text-gray-500 mb-4 text-sm">Vital Tools for Streamlined Healthcare Management</p>
+				<div class="text-3xl font-bold text-teal-600 mb-4">$25 <span class="text-base font-normal text-gray-500">/month</span></div>
+		
+				<ul class="text-left space-y-3 mb-6">
+				  <li class="flex items-center"><span class="text-teal-500 mr-2">✔</span>Essential Healthcare management</li>
+				  <li class="flex items-center"><span class="text-teal-500 mr-2">✔</span>Simplicity and affordability</li>
+				  <li class="flex items-center"><span class="text-teal-500 mr-2">✔</span>Comprehensive Healthcare Management</li>
+				  <li class="flex items-center"><span class="text-teal-500 mr-2">✔</span>Cost-Effective Solution</li>
+				</ul>
+		
+				<button class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-6 rounded-full hover:bg-gray-100">
+				  Choose Your Plan
+				</button>
+			  </div>
+		
+			  <!-- Pro Package -->
+			  <div class="bg-teal-900 text-white p-8 rounded-xl w-full max-w-md shadow-md">
+				<h2 class="text-xl font-semibold mb-1">Pro Package</h2>
+				<p class="text-teal-100 mb-4 text-sm">Cutting-Edge Tools for Effortless Healthcare Management</p>
+				<div class="text-3xl font-bold text-teal-300 mb-4">$99 <span class="text-base font-normal text-teal-100">/month</span></div>
+		
+				<ul class="text-left space-y-3 mb-6">
+				  <li class="flex items-center"><span class="text-teal-300 mr-2">✔</span>Comprehensive Healthcare Management</li>
+				  <li class="flex items-center"><span class="text-teal-300 mr-2">✔</span>Enhanced efficiency</li>
+				  <li class="flex items-center"><span class="text-teal-300 mr-2">✔</span>Cost-effective solutions</li>
+				  <li class="flex items-center"><span class="text-teal-300 mr-2">✔</span>Scalability and Customization</li>
+				</ul>
+		
+				<button class="bg-teal-400 text-teal-900 font-semibold py-2 px-6 rounded-full hover:bg-teal-300">
+				  Choose Your Plan
+				</button>
+			  </div>
+			</div>
+		  </section>
+          <section class="py-16 px-4 text-center max-w-7xl mx-auto">
+    <h1 class="text-4xl font-bold text-gray-900 mb-3">Health Horizons & Insights</h1>
+    <p class="text-gray-500 mb-12 max-w-2xl mx-auto">
+      Explore the latest trends, expert advice, and in-depth analyses on a wide range of health topics.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="./public/3e16fbfef471b63d4d5bda008b17f98bbb9f4890.png" alt="Wellness" class="w-full h-48 object-cover">
+        <div class="p-5 text-left">
+          <span class="text-sm text-teal-600 font-medium">Healthcare services</span>
+          <h3 class="text-lg font-semibold text-gray-900 mt-2">Our Dedication to Enhancing Your Overall Wellness</h3>
+          <p class="text-sm text-gray-500 mt-2">
+            We take immense pride in nurturing your vitality, dedicating ourselves to supporting your health and...
+          </p>
+          <p class="text-xs text-gray-400 mt-4">24 august 2024</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="./public/7778d78ff2816796b7eb29d605a2beba101fbe24.png" alt="Eye care" class="w-full h-48 object-cover">
+        <div class="p-5 text-left">
+          <span class="text-sm text-teal-600 font-medium">Eye care services</span>
+          <h3 class="text-lg font-semibold text-gray-900 mt-2">Holistic Eye Care: Optimal Solutions for Vision Health</h3>
+          <p class="text-sm text-gray-500 mt-2">
+            We’re devoted to enhancing your vitality and supporting your well-being. Your wellness journey...
+          </p>
+          <p class="text-xs text-gray-400 mt-4">24 august 2024</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="./public/be49a69c32b40c1a96b975b9e82dcc2c24c57673.png" alt="Healthcare team" class="w-full h-48 object-cover">
+        <div class="p-5 text-left">
+          <span class="text-sm text-teal-600 font-medium">Healthcare Championing</span>
+          <h3 class="text-lg font-semibold text-gray-900 mt-2">Leading the Charge Toward a Healthier, More Vibrant You</h3>
+          <p class="text-sm text-gray-500 mt-2">
+            We are deeply committed to enhancing your vitality and overall well-being. Our focus is on supporting...
+          </p>
+          <p class="text-xs text-gray-400 mt-4">25 august 2024</p>
+        </div>
+      </div>
+    </div>
+    <button class="bg-teal-500 text-white font-medium py-2 px-6 rounded-full hover:bg-teal-600 transition">
+      Show more
+    </button>
+          </section >
+		  <section class="relative w-[1392px] h-[430px] flex-shrink-0 rounded-[16px] bg-[#64D3C2]">
+			<div class="items-center ">
+				<div class="mt-[80px] mr-[80px] mb-[42px] ml-[80px] inline-flex flex-col items-start gap-[40px] w-[804px] h-[308px]">
+				<h1 class="w-[804px] text-[60px] font-bold leading-[62px] text-[#030527] font-['Inter']">Schedule Your <br> Appointment with us</h1>
+			    <p class="w-[687px] text-[#0D1525] font-inter text-[20px] font-normal leading-[140%]">We’re here to help! Whether you have inquiries about our services, need assistance, or simply want more information, feel free to reach out.</p>
+		
+			</div>
+			<img class="absolute top-12 ml-219" src="./public/Contents.png" alt=""> 
+		</div>
+		  </section>	
+		  <footer class="bg-white text-gray-700 py-10 border-t">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+		  
+				<!-- Solutions -->
+				<div>
+				  <h4 class="font-semibold mb-4">Solutions</h4>
+				  <ul class="space-y-2 text-sm">
+					<li><a href="#" class="hover:underline">Electronic Health</a></li>
+					<li><a href="#" class="hover:underline">Telehealth Services</a></li>
+					<li><a href="#" class="hover:underline">Billing and invoicing</a></li>
+				  </ul>
+				</div>
+		  
+				<!-- Company -->
+				<div>
+				  <h4 class="font-semibold mb-4">Company</h4>
+				  <ul class="space-y-2 text-sm">
+					<li><a href="#" class="hover:underline">About us</a></li>
+					<li><a href="#" class="hover:underline">Blog</a></li>
+					<li><a href="#" class="hover:underline">Career</a></li>
+				  </ul>
+				</div>
+		  
+				<!-- Contact -->
+				<div>
+				  <h4 class="font-semibold mb-4">Get In Touch</h4>
+				  <ul class="space-y-2 text-sm">
+					<li>📞 (406) 555-0120</li>
+					<li>✉️ hipixem@gmail.com</li>
+					<li>📍 3517 W. Gray St. Utica, Pennsylvania 57867</li>
+				  </ul>
+				</div>
+		  
+				<!-- Social Media -->
+				<div>
+				  <h4 class="font-semibold mb-4">Follow Us On</h4>
+				  <div class="flex space-x-4 text-gray-500 text-xl">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				  </div>
+				</div>
+		  
+			  </div>
+		  
+			  <div class="mt-10 border-t pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+			  </div>
+			</div>
+		  </footer>
+	
+	  <script type="module" src="/src/main.ts"></script>
 	</body>
 </html>
